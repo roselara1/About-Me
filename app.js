@@ -4,6 +4,8 @@ var userPoints = 0;
 
 
 
+
+
 alert('Welcome to my guessing game!');
 
 var user = prompt('What is your name?');
@@ -25,15 +27,15 @@ if (answer === 'yes' || answer === 'y') {
 
 }
 
-alert(' you have ' + userPoints)
+alert(' You have ' + userPoints + ' points.')
 
 //Question 2
 
-var answer = prompt('Is Ana an only child? ' , 'type yes or no').toLowerCase();
+var onlyChild = prompt('Is Ana an only child? ' , 'type yes or no').toLowerCase();
 
-console.log(answer);
+console.log(onlyChild);
 
-if (answer === 'no' || answer === 'n') {
+if (onlyChild === 'no' || onlyChild === 'n') {
     //if its correct give them a point
     userPoints++; //If the answer is yes, they're going to get a point
 } else {
@@ -41,16 +43,15 @@ if (answer === 'no' || answer === 'n') {
     alert('Sorry, thats wrong! I have an older brother and two younger sisters.');
 
 }
-
-alert(' POINTS: ' + userPoints + '!!')
+alert(' You have ' + userPoints + ' points.')
 
 //Question 3
 
-var answer = prompt('Does Ana know how to drive?' , 'type yes or no').toLowerCase();
+var anaDrive = prompt('Does Ana know how to drive?' , 'type yes or no').toLowerCase();
 
-console.log(answer);
+console.log(anaDrive);
 
-if (answer === 'yes' || answer === 'y') {
+if (anaDrive === 'yes' || anaDrive === 'y') {
     //if its correct give them a point
     userPoints++; //If the answer is yes, they're going to get a point
 } else {
@@ -58,16 +59,15 @@ if (answer === 'yes' || answer === 'y') {
     alert('Wrong again! ..but I do hate to drive. Please try again!');
 
 }
-
-alert(' POINTS: ' + userPoints + '!!')
+alert(' You have ' + userPoints + ' points.')
 
 //Question 4
 
-var answer = prompt(' Does Ana like Game of Thrones?' , 'type yes or no').toLowerCase();
+var gameOfThrones = prompt(' Does Ana like Game of Thrones?' , 'type yes or no').toLowerCase();
 
-console.log(answer);
+console.log(gameOfThrones);
 
-if (answer === 'no' || answer === 'n') {
+if (gameOfThrones === 'no' || gameOfThrones === 'n') {
     //if its correct give them a point
     userPoints++; //If the answer is yes, they're going to get a point
 } else {
@@ -75,16 +75,15 @@ if (answer === 'no' || answer === 'n') {
     alert('Sorry, but I have never seen an episode of that show.. Try again! :(');
 
 }
-
-alert(' POINTS: ' + userPoints + '!!')
+alert(' You have ' + userPoints + ' points.')
 
 //Question 5
 
-var answer = prompt(' Does Ana speak any languages other than English?' , 'type yes or no').toLowerCase();
+var otherLanguage = prompt(' Does Ana speak any languages other than English?' , 'type yes or no').toLowerCase();
 
-console.log(answer);
+console.log(otherLanguage);
 
-if (answer === 'yes' || answer === 'y') {
+if (otherLanguage === 'yes' || otherLanguage === 'y') {
     //if its correct give them a point
     userPoints++; //If the answer is yes, they're going to get a point
 } else {
@@ -93,4 +92,14 @@ if (answer === 'yes' || answer === 'y') {
 
 }
 
-alert(' POINTS: ' + userPoints + '!!')
+
+
+
+if (userPoints >= 3) {
+   alert('You Passed!!');
+} else {
+   alert('You failed..Try again..:(');
+}
+
+
+alert(' You have ' + userPoints + ' points.')
