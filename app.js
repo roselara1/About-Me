@@ -119,32 +119,48 @@ for (var i = 3; i >=0; i--) {
 alert(' You have ' + userPoints + ' points.');
 
 
-//Question 7 is below
+// Question 7 is below
 
 
 
-var showsILike = [ 'the office', 'dexter', 'stranger things', 'how to get away with murder', 'it\'s always sunny in philadelphia', 'rugrats' ];
+var showsILike = [ 'the office', 'dexter', 'stranger things', 'rupaul\'s drag race', 'it\'s always sunny in philadelphia' ];
 
-for (var y = 5; y >=0; y--) {
+for (var y = 6; y >0; y--) {
   var guessRight = false;
   var guess2 = prompt('What shows do you think Ana likes?');
   for (var x = 0; x < showsILike.length; x++) {
-    if (guess2 === showsILike[x].toLowerCase())
-      guessRight = true;
+    if (guess2 === showsILike[x].toLowerCase()) guessRight = true;
 
   }
-  if (guessRight) {
-    alert('You are correct!');
+  if (guessRight === true) {
+    var message = 'You are correct, but Ana also likes ' ;
+    for (x = 0; x < showsILike.length; x++) {
+      // continue means to skip over and not display, which is why it doesnt matter whether or not we add a period or comma
+      if (showsILike[x] === guess2) continue;
+
+      if (x===showsILike.length -1){
+        message += (showsILike[x] + '.');
+      } else {
+        message += (showsILike[x] + ', ');
+      }
+    }
+
+    alert(message);
+    console.log(showsILike);
+    userPoints++;
+    y = 0;
+
 
   } else {
-    alert('Sorry, try again!');
+    alert('Sorry, that is incorrect. You have ' + y + ' guesses left. Try again!');
 
+  }
+  alert(' You have ' + userPoints + ' points.');
+
+  if (userPoints >= 5) {
+    alert('You got ' + userPoints + ' out of 7 questions correct, ' + user + ', Great Job! You passed!');
+  } else {
+    alert('You got ' + userPoints + ' out of 7 questions correct, ' + user + ', Better luck next time! ');
   }
 }
 
-
-if (userPoints >= 3) {
-  alert('You Passed!!');
-} else {
-  alert('You failed..Try again..:(');
-}
