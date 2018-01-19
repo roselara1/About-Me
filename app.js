@@ -11,88 +11,91 @@ alert('Hi ' + user + ', I\'m so glad you want to play my game to get to know me!
 
 
 // //Question 1 is below
-var answer = prompt('Do you think Ana has any pets? ' , 'type yes or no').toLowerCase();
-console.log(answer);
+function fiveQuestions() {
+  
+  var answer = prompt('Do you think Ana has any pets? ' , 'type yes or no').toLowerCase();
+  console.log(answer);
 
-if (answer === 'no' || answer === 'n') {
+  if (answer === 'no' || answer === 'n') {
   //if its correct give them a point
-  userPoints++; //If the answer is no, they're going to get a point
-} else {
+    userPoints++; //If the answer is no, they're going to get a point
+  } else {
   //if its not correct, tell them to try again
-  alert('Sorry, but I don\'t have any pets! My landlord won\'t allow it. Please try again.');
-}
-//alert below lets user know how many points they have
-alert(' You have ' + userPoints + ' points.');
+    alert('Sorry, but I don\'t have any pets! My landlord won\'t allow it. Please try again.');
+  }
+  //alert below lets user know how many points they have
+  alert(' You have ' + userPoints + ' points.');
 
 
 
-// //Question 2 is below
+  // //Question 2 is below
 
-var onlyChild = prompt('Is Ana an only child? ' , 'type yes or no').toLowerCase();
-console.log(onlyChild); //print the answer in the console
+  var onlyChild = prompt('Is Ana an only child? ' , 'type yes or no').toLowerCase();
+  console.log(onlyChild); //print the answer in the console
 
-if (onlyChild === 'no' || onlyChild === 'n') {
+  if (onlyChild === 'no' || onlyChild === 'n') {
   //if its correct give them a point
-  userPoints++; //If the answer is no, they're going to get a point
-} else {
+    userPoints++; //If the answer is no, they're going to get a point
+  } else {
   //if its not correct, tell them to try again
-  alert('Sorry, thats wrong! Ana has an older brother and two younger sisters. Please try again.');
-}
-//alert below lets user know how many points they have
-alert(' You have ' + userPoints + ' points.');
+    alert('Sorry, thats wrong! Ana has an older brother and two younger sisters. Please try again.');
+  }
+  //alert below lets user know how many points they have
+  alert(' You have ' + userPoints + ' points.');
 
 
 
-// //Question 3 is below
+  // //Question 3 is below
 
-var anaDrive = prompt('Do you think Ana knows how to drive?' , 'type yes or no').toLowerCase();
-console.log(anaDrive);//prints the answer in the console
+  var anaDrive = prompt('Do you think Ana knows how to drive?' , 'type yes or no').toLowerCase();
+  console.log(anaDrive);//prints the answer in the console
 
-if (anaDrive === 'yes' || anaDrive === 'y') {
+  if (anaDrive === 'yes' || anaDrive === 'y') {
   //if its correct give them a point
-  userPoints++; //If the answer is yes, they're going to get a point
-} else {
+    userPoints++; //If the answer is yes, they're going to get a point
+  } else {
   //if its not correct, tell them to try again
-  alert('Wrong again! ..but I do hate to drive so I avoid it as much as I can. Please try again!');
-}
-//alert below lets user know how many points they have
-alert(' You have ' + userPoints + ' points.');
+    alert('Wrong again! ..but I do hate to drive so I avoid it as much as I can. Please try again!');
+  }
+  //alert below lets user know how many points they have
+  alert(' You have ' + userPoints + ' points.');
 
 
 
-// //Question 4 is below
+  // //Question 4 is below
 
-var gameOfThrones = prompt(' Do you think Ana likes Game of Thrones?' , 'type yes or no').toLowerCase();
-console.log(gameOfThrones); //prints the answer in the console
+  var gameOfThrones = prompt(' Do you think Ana likes Game of Thrones?' , 'type yes or no').toLowerCase();
+  console.log(gameOfThrones); //prints the answer in the console
 
-if (gameOfThrones === 'no' || gameOfThrones === 'n') {
+  if (gameOfThrones === 'no' || gameOfThrones === 'n') {
   //if its correct give them a point
-  userPoints++; //If the answer is no, they're going to get a point
-} else {
+    userPoints++; //If the answer is no, they're going to get a point
+  } else {
   //if its not correct, tell them to try again
-  alert('Sorry, but I have never seen an episode of that show.. Try again! :(');
-}
-//alert below lets user know how many point they have
-alert(' You have ' + userPoints + ' points.');
+    alert('Sorry, but I have never seen an episode of that show.. Try again! :(');
+  }
+  //alert below lets user know how many point they have
+  alert(' You have ' + userPoints + ' points.');
 
 
 
-// //Question 5 is below
+  // //Question 5 is below
 
-var otherLanguage = prompt(' Do you think Ana can speak any languages other than English?' , 'type yes or no').toLowerCase();
-console.log(otherLanguage);// prints the answer in the console
+  var otherLanguage = prompt(' Do you think Ana can speak any languages other than English?' , 'type yes or no').toLowerCase();
+  console.log(otherLanguage);// prints the answer in the console
 
-if (otherLanguage === 'yes' || otherLanguage === 'y') {
+  if (otherLanguage === 'yes' || otherLanguage === 'y') {
   //if its correct give them a point
-  userPoints++; //If the answer is yes, they're going to get a point
-} else {
+    userPoints++; //If the answer is yes, they're going to get a point
+  } else {
   //if its not correct, tell them to try again
-  alert('Wrong, Ana knows how to speak Spanish.');
+    alert('Wrong, Ana knows how to speak Spanish.');
+  }
+  //alert below lets user know how many points they have left
+  alert(' You have ' + userPoints + ' points.');
+
 }
-//alert below lets user know how many points they have left
-alert(' You have ' + userPoints + ' points.');
-
-
+fiveQuestions();
 
 //Question 6 is below
 
@@ -147,7 +150,7 @@ for (var y = 6; y >0; y--) { //this is the counter
         message += (showsILike[x] + ', ');
       }
     }
-//for loop ends here
+    //for loop ends here
 
     alert(message);
     console.log(showsILike);
