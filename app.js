@@ -165,6 +165,8 @@ for (var y = 6; y >0; y--) { //this is the counter
   }
 
 }
+
+//below is the point counter that goes outside of the for loop. 
 alert(' You have ' + userPoints + ' points.');
 
 
