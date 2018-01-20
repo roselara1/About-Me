@@ -11,7 +11,7 @@ alert('Hi ' + user + ', I\'m so glad you want to play my game to get to know me!
 
 
 // //Question 1 is below
-function fiveQuestions() {
+function sevenQuestions() {
 
 var answer = prompt('Do you think Ana has any pets? ' , 'type yes or no').toLowerCase();
 console.log(answer);
@@ -194,7 +194,7 @@ for (var y = 6; y >0; y--) { //this is the counter
   }
 }
 }
-fiveQuestions();
+sevenQuestions();
 
 }
 alert(' You have ' + userPoints + ' points.');
