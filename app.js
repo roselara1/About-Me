@@ -27,6 +27,8 @@ function questionOne() {
   alert(' You have ' + userPoints + ' points.');
 }
 
+questionOne();
+
 // //Question 2 is below
 function questionTwo() {
   var onlyChild = prompt('Is Ana an only child? ', 'type yes or no').toLowerCase();
@@ -169,7 +171,7 @@ function questionSeven() {
 
 }
 
-questionOne();
+
 questionTwo();
 questionThree();
 questionFour();
