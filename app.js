@@ -11,7 +11,11 @@ alert('Hi ' + user + ', I\'m so glad you want to play my game to get to know me!
 
 
 // //Question 1 is below
-function fiveQuestions() {
+function sevenQuestions() {
+
+var answer = prompt('Do you think Ana has any pets? ' , 'type yes or no').toLowerCase();
+console.log(answer);
+
 
   var answer = prompt('Do you think Ana has any pets? ' , 'type yes or no').toLowerCase();
   console.log(answer);
@@ -21,10 +25,19 @@ function fiveQuestions() {
     userPoints++; //If the answer is no, they're going to get a point
   } else {
   //if its not correct, tell them to try again
+
+  alert('Sorry, but I don\'t have any pets! My landlord won\'t allow it. Please try again.');
+}
+
+
+//alert below lets user know how many points they have
+alert(' You have ' + userPoints + ' points.');
+
     alert('Sorry, but I don\'t have any pets! My landlord won\'t allow it. Please try again.');
   }
   //alert below lets user know how many points they have
   alert(' You have ' + userPoints + ' points.');
+
 
 
 
@@ -38,10 +51,18 @@ function fiveQuestions() {
     userPoints++; //If the answer is no, they're going to get a point
   } else {
   //if its not correct, tell them to try again
+
+  alert('Sorry, thats wrong! Ana has an older brother and two younger sisters. Please try again.');
+}
+
+//alert below lets user know how many points they have
+alert(' You have ' + userPoints + ' points.');
+
     alert('Sorry, thats wrong! Ana has an older brother and two younger sisters. Please try again.');
   }
   //alert below lets user know how many points they have
   alert(' You have ' + userPoints + ' points.');
+
 
 
 
@@ -163,6 +184,17 @@ for (var y = 6; y >0; y--) { //this is the counter
     alert('Sorry, that is incorrect. You have ' + y + ' guesses left. Try again!');
 
   }
+
+  //if OVERALL userPoints is greater than or equal to 5, then display the first alert
+  if (userPoints >= 5) {
+    alert('You got ' + userPoints + ' out of 7 questions correct, ' + user + ', Great Job! You passed!');
+  //if OVERALL userPoints is not greater than or equal to 5, then display the second alert
+  } else {
+    alert('You got ' + userPoints + ' out of 7 questions correct, ' + user + '. Better luck next time! ');
+  }
+}
+}
+sevenQuestions();
 
 }
 alert(' You have ' + userPoints + ' points.');
