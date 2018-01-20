@@ -11,6 +11,7 @@ alert('Hi ' + user + ', I\'m so glad you want to play my game to get to know me!
 
 
 // //Question 1 is below
+function fiveQuestions() {
 var answer = prompt('Do you think Ana has any pets? ' , 'type yes or no').toLowerCase();
 console.log(answer);
 
@@ -21,6 +22,8 @@ if (answer === 'no' || answer === 'n') {
   //if its not correct, tell them to try again
   alert('Sorry, but I don\'t have any pets! My landlord won\'t allow it. Please try again.');
 }
+
+
 //alert below lets user know how many points they have
 alert(' You have ' + userPoints + ' points.');
 
@@ -38,6 +41,7 @@ if (onlyChild === 'no' || onlyChild === 'n') {
   //if its not correct, tell them to try again
   alert('Sorry, thats wrong! Ana has an older brother and two younger sisters. Please try again.');
 }
+
 //alert below lets user know how many points they have
 alert(' You have ' + userPoints + ' points.');
 
@@ -91,8 +95,6 @@ if (otherLanguage === 'yes' || otherLanguage === 'y') {
 }
 //alert below lets user know how many points they have left
 alert(' You have ' + userPoints + ' points.');
-
-
 
 //Question 6 is below
 
@@ -166,7 +168,8 @@ for (var y = 6; y >0; y--) { //this is the counter
     alert('You got ' + userPoints + ' out of 7 questions correct, ' + user + ', Great Job! You passed!');
   //if OVERALL userPoints is not greater than or equal to 5, then display the second alert
   } else {
-    alert('You got ' + userPoints + ' out of 7 questions correct, ' + user + ', Better luck next time! ');
+    alert('You got ' + userPoints + ' out of 7 questions correct, ' + user + '. Better luck next time! ');
   }
 }
-
+}
+fiveQuestions();
