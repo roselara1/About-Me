@@ -12,7 +12,7 @@ alert('Hi ' + user + ', I\'m so glad you want to play my game to get to know me!
 
 // //Question 1 is below
 function fiveQuestions() {
-  
+
   var answer = prompt('Do you think Ana has any pets? ' , 'type yes or no').toLowerCase();
   console.log(answer);
 
@@ -95,6 +95,7 @@ function fiveQuestions() {
   alert(' You have ' + userPoints + ' points.');
 
 }
+
 fiveQuestions();
 
 //Question 6 is below
@@ -162,14 +163,15 @@ for (var y = 6; y >0; y--) { //this is the counter
     alert('Sorry, that is incorrect. You have ' + y + ' guesses left. Try again!');
 
   }
-  alert(' You have ' + userPoints + ' points.');
 
-  //if OVERALL userPoints is greater than or equal to 5, then display the first alert
-  if (userPoints >= 5) {
-    alert('You got ' + userPoints + ' out of 7 questions correct, ' + user + ', Great Job! You passed!');
-  //if OVERALL userPoints is not greater than or equal to 5, then display the second alert
-  } else {
-    alert('You got ' + userPoints + ' out of 7 questions correct, ' + user + ', Better luck next time! ');
-  }
 }
+alert(' You have ' + userPoints + ' points.');
 
+
+//if OVERALL userPoints is greater than or equal to 5, then display the first alert
+if (userPoints >= 5) {
+  alert('You got ' + userPoints + ' out of 7 questions correct, ' + user + ', Great Job! You passed!');
+//if OVERALL userPoints is not greater than or equal to 5, then display the second alert
+} else {
+  alert('You got ' + userPoints + ' out of 7 questions correct, ' + user + ', Better luck next time! ');
+}
